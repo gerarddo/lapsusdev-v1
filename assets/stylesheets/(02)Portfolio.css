@@ -1,0 +1,108 @@
+html {
+    width: 100%; 
+    height: 100%; 
+    margin: 0;
+	position: fixed;
+	    /* This css makes you background image look good naked */
+            /*background-image: url("https://www2.shutterstock.com/blog/wp-content/uploads/sites/5/2017/05/featured-fireflies.jpg");*/
+        	/*background-image: url("http://wonderfulengineering.com/wp-content/uploads/2014/09/Purple-wallpaper-3.jpg");*/
+            background-color: white;
+        /*start css*/
+            -o-background-size: cover;
+            -moz-background-size: cover;
+		    -webkit-background-size: cover;
+            background-position: center;
+        	background-repeat: no-repeat;
+    	/*finish css*/
+}
+
+body {
+	margin: 0;
+    font-family: Open sans, verdana;
+}
+
+#masterContainer {
+    position: absolute;
+    padding-top: 80px;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch; /* Safari won't scroll without this */
+}
+
+#masterContainer:after {
+    content: "";
+    display: block;
+    height: 60px;
+    width: 100%;
+}
+
+/*social buttons styling*/
+    a.socialBtn {
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+
+        color: black !important;
+        margin: 0 2px 0 2px;
+        text-decoration: none !important;
+    }
+
+    a.socialBtn:hover {
+        color: #999 !important;
+        margin: 0 2px 0 2px;
+        text-decoration: none !important;
+        font-size: 1.3em;
+    }
+
+/*navbar and navbar elements styling*/
+    i.iHome1 {
+        font-size: 2em;
+        transition: all .3s;
+    }
+
+    i.iHome2 {
+        font-size: 1.333em;
+        transition: all .3s;
+    }
+
+    a.iHome-parent1 {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        transition: all .3s;
+    }
+
+    a.iHome-parent2 {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        transition: all .3s;
+    }
+
+    nav.navbar-inverse {
+        min-height: 30px;
+
+    }
+
+    nav.navbar-pos-1 {
+        height: 50px;
+        transition: all .3s;
+        background-color: rgba(20, 20, 20, .75);
+    }
+
+    nav.navbar-pos-2 {
+        height: 30px;
+        transition: all .3s;
+        background-color: rgba(0, 0, 0, .85)
+    }
+
+    .navbar-nav>li>a.nav-btn-1 {
+        padding: 15px;
+        transition: all .3s;
+    }
+
+    .navbar-nav>li>a.nav-btn-2 {
+        padding: 5px 10px 5px 10px;
+        transition: all .3s;
+    }

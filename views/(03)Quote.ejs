@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QuoteApp!</title>
+	<!-- For displaying mexican accents and shit -->	
+		<meta charset="utf-8" />
+	<!-- Stylesheets -->
+<!-- 		<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/homepage.css"> -->
+	<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<!-- Fonts and icons -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="thumbnail">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 well text-center" id="quote">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<button class="btn btn-default" id="newQuote">New quote!</button>
+				<a class="btn btn-default" target="_blank" id="tweet" >
+					Tweet
+				</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+			<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+			<!-- Bootstrap's JavaScript-->
+		<script type="text/javascript" src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<!-- Custom Javascript file -->
+		<script src="../assets/scripts/(03)Quote.js"></script>
+
+		<script>
+			window.twttr = (function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0],
+			    t = window.twttr || {};
+			  if (d.getElementById(id)) return t;
+			  js = d.createElement(s);
+			  js.id = id;
+			  js.src = "https://platform.twitter.com/widgets.js";
+			  fjs.parentNode.insertBefore(js, fjs);
+
+			  t._e = [];
+			  t.ready = function(f) {
+			    t._e.push(f);
+			  };
+
+			  return t;
+			}(document, "script", "twitter-wjs"));
+		</script>
+	</body>
+</html>
