@@ -1,1 +1,14 @@
-main.css
+.jumbotron {
+	/*background-color: none;*/
+
+/*	padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;*/
+
+	/*display: block;*/
+	background-image: url("/images/(04)Weather/day/113.png");
+}
+/*
+.container-fluid {
+	background-image: '/images/(04)Weather/day/113.png';
+}*/
