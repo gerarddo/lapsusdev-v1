@@ -8,8 +8,7 @@ var indexRoutes                 = require("./routes/index")
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
-app.use("/scripts", express.static( __dirname + "/public/scripts"));
-app.use("/images", express.static( __dirname + "/public/images"));
+// section-container
 
 app.use(indexRoutes);
 

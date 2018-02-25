@@ -1,0 +1,412 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.btn-default {
+  color: black;
+  background-color: #ffffff;
+  border-color: #c5c5c5;
+}
+
+.btn-default:hover {
+  background-color: #e5e5e5;
+}
+
+.btn-default:active {
+  background-color: #d4d4d4;
+}
+
+.btn-success {
+  color: white;
+  background-color: #5cb85c;
+  border-color: #3e8f3e;
+}
+
+.btn-success:hover {
+  background-color: #48a548;
+}
+
+.btn-success:active {
+  background-color: #409840;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #d9534f;
+  border-color: #b92c28;
+}
+
+.btn-danger:hover {
+  background-color: #c12e2a;
+}
+
+.btn-danger:active {
+  background-color: #a52925;
+}
+
+.btn-warning {
+  color: white;
+  background-color: #f0ad4e;
+  border-color: #e38d13;
+}
+
+.btn-warning:hover {
+  background-color: #eb9316;
+}
+
+.btn-warning:active {
+  background-color: #d68614;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #337ab7;
+  border-color: #245580;
+}
+
+.btn-primary:hover {
+  background-color: #265a88;
+}
+
+.btn-primary:active {
+  background-color: #1f4a6f;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-top {
+    display: none;
+  }
+  .container-body {
+    padding-bottom: 46px;
+  }
+  .container-body:after {
+    content: "";
+    height: 46px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bottom {
+    display: none;
+  }
+  .nav-back {
+    display: none;
+  }
+  .container-body {
+    padding-top: 46px;
+  }
+}
+
+.nav {
+  width: 100%;
+  z-index: 10;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.nav ul {
+  float: right;
+  height: 46px;
+}
+
+.nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav li {
+  height: 100%;
+}
+
+.nav a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-tall {
+  height: 46px;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.nav-tall li {
+  padding-top: 12px !important;
+  padding-bottom: 16px !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.nav-short {
+  height: 30px;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.nav-short ul {
+  height: 30px;
+}
+
+.nav-short li {
+  padding-top: 5px !important;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.nav-top {
+  position: fixed;
+}
+
+.nav-top li {
+  float: left;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.nav-top #nav-header {
+  height: 100%;
+  float: left;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.nav-bottom {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.nav-bottom ul {
+  width: 100%;
+}
+
+.nav-bottom li {
+  float: left;
+  width: 20%;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.nav-back {
+  position: fixed;
+}
+
+.nav-back ul {
+  float: left;
+}
+
+.nav-back li {
+  float: left;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#nav-back-header {
+  height: 100%;
+  float: left;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navbar-fancy {
+  background-color: rgba(20, 20, 20, 0.75);
+}
+
+.navbar-fancy #nav-header {
+  color: white;
+}
+
+.navbar-fancy a {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  text-decoration: none;
+  color: #9d9d9d;
+}
+
+.navbar-fancy a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-fancy {
+    background-color: rgba(20, 20, 20, 0.9);
+  }
+  .navbar-fancy a {
+    color: #fff;
+  }
+}
+
+.container-body {
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.thumbnail {
+  background-color: white;
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.jumbotron {
+  background-color: #eeeeee;
+  display: block;
+  margin: 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.jumbotron:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  font-family: arial;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block-center {
+  display: block;
+  margin: auto;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
