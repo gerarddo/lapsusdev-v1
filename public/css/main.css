@@ -64,7 +64,9 @@ body {
   width: 50%;
   float: left; }
   #expertise .expertise-info-container p {
-    margin-right: 10px; }
+    margin-right: 5%;
+    margin-top: 20px;
+    font-size: 1.3em; }
 
 #expertise .chart {
   display: block;
@@ -121,8 +123,8 @@ body {
     display: block;
     background-color: rgba(226, 220, 214, 0.6);
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 6%;
+    margin-bottom: 6%;
     padding: 10px; }
     #contact .container header {
       max-width: 200px;
