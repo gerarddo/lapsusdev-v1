@@ -12,12 +12,10 @@
     .about-img-container {
         float: left;
         width: 30%;
-        height: 300px;
         padding: 30px;
         .img-frame {
             display: block;
-            float: right;
-            width: 200px;
+            max-width: 200px;
             position: relative;
             img {
                 display: block;
@@ -41,7 +39,6 @@
     .about-info-container {
         float: left;
         width: 70%;
-        height: 300px;
         padding: 30px;
 
         p:first-of-type {
@@ -57,11 +54,36 @@
             margin-bottom: 1em;
             margin-top: 1em;
             padding: 0; 
-            width: 400px;    
+            max-width: 400px;    
         }
     
         strong {
             font-size: 1.2em;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .about-img-container,
+        .about-info-container {
+            width: 100%;
+        }
+
+        .about-img-container {
+            .img-frame {
+                float: none;
+                margin: auto;
+            }
+            float: none;
+        }
+
+        .about-info-container {
+            text-align: center;
+            .break-line {
+                margin: {
+                    right: auto;
+                    left: auto;
+                }
+            }
         }
     }
 

@@ -18,12 +18,10 @@
 #about .about-img-container {
   float: left;
   width: 30%;
-  height: 300px;
   padding: 30px; }
   #about .about-img-container .img-frame {
     display: block;
-    float: right;
-    width: 200px;
+    max-width: 200px;
     position: relative; }
     #about .about-img-container .img-frame img {
       display: block;
@@ -42,7 +40,6 @@
 #about .about-info-container {
   float: left;
   width: 70%;
-  height: 300px;
   padding: 30px; }
   #about .about-info-container p:first-of-type {
     margin-top: 35px; }
@@ -54,39 +51,80 @@
     margin-bottom: 1em;
     margin-top: 1em;
     padding: 0;
-    width: 400px; }
+    max-width: 400px; }
   #about .about-info-container strong {
     font-size: 1.2em; }
+
+@media (max-width: 992px) {
+  #about .about-img-container,
+  #about .about-info-container {
+    width: 100%; }
+  #about .about-img-container {
+    float: none; }
+    #about .about-img-container .img-frame {
+      float: none;
+      margin: auto; }
+  #about .about-info-container {
+    text-align: center; }
+    #about .about-info-container .break-line {
+      margin-right: auto;
+      margin-left: auto; } }
 
 #expertise h1 {
   margin: 30px;
   text-align: center; }
 
 #expertise .expertise-info-container {
+  max-height: 100%;
   width: 50%;
-  float: left; }
+  float: left;
+  overflow: hidden; }
   #expertise .expertise-info-container p {
     margin-right: 5%;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 1.3em; }
+
+#expertise .row {
+  height: 220px;
+  padding-bottom: 30px; }
 
 #expertise .chart {
   display: block;
   float: right;
-  margin-bottom: 30px;
   width: 50%;
-  height: 200px; }
+  height: 100%; }
+
+#expertise .bar {
+  width: 100%;
+  background-color: steelblue;
+  color: white;
+  border: 1px solid white;
+  padding-left: 1px;
+  padding-right: 1px;
+  height: 12.5%; }
+
+#expertise .chart rect {
+  fill: steelblue; }
+
+#expertise .chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: middle; }
 
 #projects {
   color: white;
-  padding-bottom: 30px; }
+  padding: 30px; }
   #projects h1 {
-    margin: 30px;
-    text-align: center; }
+    display: block;
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto; }
   #projects .project-info-container {
     text-align: left;
     float: left;
-    margin-top: 30px; }
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 50%; }
     #projects .project-info-container h1 {
       margin-top: 20px; }
     #projects .project-info-container p {
@@ -102,7 +140,7 @@
       padding-right: 10px;
       color: #b4b4b4; }
   #projects .project-img-container {
-    float: right;
+    float: left;
     display: block;
     margin: auto;
     width: 50%;
@@ -118,6 +156,11 @@
     width: 100%; }
     #projects .project-img-overlay:hover {
       background-color: rgba(255, 255, 255, 0.3); }
+  @media (max-width: 992px) {
+    #projects .project-img-container {
+      width: 100%; }
+    #projects .project-info-container {
+      width: 100%; } }
 
 #contact {
   display: block; }

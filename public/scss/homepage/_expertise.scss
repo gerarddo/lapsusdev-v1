@@ -6,20 +6,49 @@
     }
 
     .expertise-info-container {
+        max-height: 100%;
         width: 50%;
         float: left;
+        // text-overflow: ellipsis;
+        overflow: hidden;
         p {
             margin-right: 5%;
-            margin-top: 20px;
+            margin-top: 15px;
             font-size: 1.3em;
         }
+    }
+    .row { 
+        height: 220px;
+        padding-bottom: 30px;
     }
     .chart {
         display: block;
         // margin: auto;
         float: right;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         width: 50%;
-        height: 200px;
+        height: 100%;
     }
+    .bar {
+        width: 100%;
+        background-color: steelblue;
+        color: white;
+        border: 1px solid white;
+        // float: left;
+        padding: {
+            left: 1px;
+            right: 1px;
+        }
+        height: 12.5%;
+    }
+
+    .chart rect {
+        fill: steelblue;
+      }
+      
+      .chart text {
+        fill: white;
+        font: 10px sans-serif;
+        text-anchor: middle;
+      }
 }
