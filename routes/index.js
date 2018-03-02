@@ -5,6 +5,10 @@ var router = express.Router();
 router.get("/", function(req, res){
     res.render("testindex")
 }); //router.get
+router.get("/old", function(req, res){
+    res.render("index")
+}); //router.get
+
 
 router.get("*", function(req, res){
     res.redirect("/")

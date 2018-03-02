@@ -7,6 +7,7 @@
         display: block;
         // max-width: 300px;
         text-align: center !important;
+        font-size: 2em;
         margin: {
             bottom: 30px;
             left: auto;
@@ -16,15 +17,15 @@
 
     .project-info-container {
         text-align: left;
-        float: left;
+        float: right;
         margin-bottom: 30px;
         margin-top: 10px; 
-        // padding: {
-        //     top: 20px;
-        //     bottom: 20px;
-        //     left: 20px;
-        //     right: 20px;
-        // }
+        padding: {
+            // top: 20px;
+            // bottom: 20px;
+            left: 5%;
+            // right: 20px;
+        }
         width: 50%;
 
         h2 {
@@ -56,28 +57,35 @@
     }
 
     .project-img-container {
-        float: left;
-        display: block;
-        margin: auto;
+        float: right;
         width: 50%;
+        // padding: 30px;
         position: relative;
-
-        img {
+        .img-frame {
             display: block;
+            position: relative;
+            width: 90%;
+            margin: auto;
+            img {
+                display: block;
+                
+                width: 100%;
+            }
+        }
+        .img-frame-overlay {
+            position: absolute;
+            background-color: rgba(255,255,255,0);
+            z-index: 2;
+            height: 100%;
             width: 100%;
+            &:hover {
+                background-color: rgba(255,255,255,0.1);
+            }
         }
     }
 
-    .project-img-overlay {
-        position: absolute;
-        background-color: rgba(255,255,255,0);
-        z-index: 2;
-        height: 100%;
-        width: 100%;
-        &:hover {
-            background-color: rgba(255,255,255,0.3);
-        }
-    }
+
+
 
     @media (max-width: 992px) {
 
@@ -86,11 +94,19 @@
         }
 
         .project-img-container {
+            margin-top: 10px;
             width: 100%;
         }
 
         .project-info-container {
             width: 100%;
+            margin-bottom: 50px;
+            h2 {
+                margin-top: 0;
+            }
+            p:first-of-type {
+                margin-top: 10px;
+            }
         }
     }
 }
