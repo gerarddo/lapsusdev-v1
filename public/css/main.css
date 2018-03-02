@@ -258,16 +258,22 @@
 .chalkboard-bg-img {
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   background-image: url("../images/welcome-img.jpg"); }
+  @media (max-width: 992px) {
+    .chalkboard-bg-img {
+      background-attachment: scroll; } }
 
 .workspace-bg-img {
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   background-image: url("../images/workspace.jpg"); }
+  @media (max-width: 992px) {
+    .workspace-bg-img {
+      background-attachment: scroll; } }
 
 .section-container {
   display: block;
