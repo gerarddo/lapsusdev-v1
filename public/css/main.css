@@ -117,6 +117,7 @@
   #projects h1 {
     display: block;
     text-align: center !important;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto; }
   #projects .project-info-container {
@@ -125,10 +126,11 @@
     margin-bottom: 30px;
     margin-top: 10px;
     width: 50%; }
-    #projects .project-info-container h1 {
+    #projects .project-info-container h2 {
       margin-top: 20px; }
     #projects .project-info-container p {
-      margin-top: 20px; }
+      margin-top: 20px;
+      color: #ccc; }
     #projects .project-info-container ul {
       margin-top: 20px; }
     #projects .project-info-container li {
@@ -138,7 +140,7 @@
       padding-bottom: 5px;
       padding-left: 10px;
       padding-right: 10px;
-      color: #b4b4b4; }
+      color: #cfc9ad; }
   #projects .project-img-container {
     float: left;
     display: block;
@@ -157,6 +159,8 @@
     #projects .project-img-overlay:hover {
       background-color: rgba(255, 255, 255, 0.3); }
   @media (max-width: 992px) {
+    #projects h1 {
+      margin-bottom: 0; }
     #projects .project-img-container {
       width: 100%; }
     #projects .project-info-container {
