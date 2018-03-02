@@ -1,0 +1,105 @@
+#contact {
+
+    
+    display: block;
+    .container {
+        display: block;
+        // background-color: rgba(255,255,255,0.6);
+        // background-color: rgba(157,47,77, 0.6);
+        // background-color: rgba(226,211,154, 0.6);
+        background-color: rgba(226,220,214, 0.6);
+        text-align: center;
+
+        margin: {
+            top: 6%;
+            bottom: 6%;
+        }
+        padding: 10px;
+
+        header {
+            max-width: 200px;
+            margin: {
+                top: 10px;
+                bottom: 30px;
+                right: auto;
+                left: auto;
+            }
+            text-align: center;
+        }
+        
+        p {
+            max-width: 400px;
+            display: block;
+            margin: {
+                bottom: 30px;
+                right: auto;
+                left: auto;
+            }
+        }
+    }
+
+
+
+    .contact-input-container {
+        width: 50%;
+        float: left;
+        padding: 5px;
+        input {
+            border: {
+                width: 0px;
+                style: solid;
+                radius: 5px;
+            }
+            background-color: white;
+            width: 100%;
+            height: 33px;
+            margin-top: 5px;
+            // color: white;
+        }
+    }
+
+    .contact-textarea-container {
+        width: 50%;
+        float: right;
+        padding: 5px;
+        // height: 109px;
+        textarea {
+            width: 100%;
+            border: {
+                width: 0px;
+                style: solid;
+                radius: 5px;
+            }   
+            background-color: white;
+            // color: gray;
+            margin-top: 5px;
+            height: 109px;
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                // color: black;
+                opacity: 1; /* Firefox */
+            }
+        }
+    }
+
+    button {
+        display: block;
+        height: 3em;
+        background-color: white;
+        width: 200px;
+        border: {
+            width: 0px;
+            style: solid;
+            radius: 5px;
+        }   
+        margin: {
+            top: 10px;
+            bottom: 30px;
+            right: auto;
+            left: auto;
+        }
+        &:hover {
+            background-color: steelblue;
+            color: white;
+        }
+    }
+}

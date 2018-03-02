@@ -1,0 +1,28 @@
+@import "../../mixins/main";
+
+@import "_welcome";
+@import "_about";
+@import "_expertise";
+@import "_projects";
+@import "_contact";
+
+.chalkboard-bg-img {
+    @include static-bg-img();
+    background-image: url("../images/welcome-img.jpg") ;
+}
+
+.workspace-bg-img {
+    @include static-bg-img();
+    background-image: url("../images/workspace.jpg") ;
+}
+
+.section-container {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    position: relative;
+}

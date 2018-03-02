@@ -1,0 +1,25 @@
+#expertise {
+
+    h1 {
+        margin: 30px;
+        text-align: center;
+    }
+
+    .expertise-info-container {
+        width: 50%;
+        float: left;
+        p {
+            margin-right: 5%;
+            margin-top: 20px;
+            font-size: 1.3em;
+        }
+    }
+    .chart {
+        display: block;
+        // margin: auto;
+        float: right;
+        margin-bottom: 30px;
+        width: 50%;
+        height: 200px;
+    }
+}

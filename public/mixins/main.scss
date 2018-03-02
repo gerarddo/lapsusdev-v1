@@ -1,0 +1,14 @@
+@mixin transition($seconds){
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+
+@mixin static-bg-img() {
+    background: {
+        repeat: no-repeat;
+        position: center center;
+        attachment: fixed;
+        size: cover;
+    }
+}
