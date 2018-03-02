@@ -258,15 +258,15 @@
 .chalkboard-bg-img {
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
-  background-size: scroll;
+  background-attachment: scroll;
+  background-size: cover;
   background-image: url("../images/welcome-img.jpg"); }
 
 .workspace-bg-img {
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
-  background-size: scroll;
+  background-attachment: scroll;
+  background-size: cover;
   background-image: url("../images/workspace.jpg"); }
 
 .section-container {
