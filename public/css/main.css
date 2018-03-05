@@ -22,7 +22,8 @@
   #about .about-img-container .img-frame {
     display: block;
     max-width: 200px;
-    position: relative; }
+    position: relative;
+    float: right; }
     #about .about-img-container .img-frame img {
       display: block;
       width: 100%;
@@ -41,6 +42,9 @@
   float: left;
   width: 70%;
   padding: 30px; }
+  #about .about-info-container a {
+    text-decoration: underline;
+    color: white; }
   #about .about-info-container p:first-of-type {
     margin-top: 35px; }
   #about .about-info-container .break-line {
@@ -78,21 +82,25 @@
   max-height: 100%;
   width: 50%;
   float: left;
-  overflow: hidden; }
+  padding: 10px; }
   #expertise .expertise-info-container p {
-    margin-right: 5%;
-    margin-top: 15px;
     font-size: 1.3em; }
 
-#expertise .row {
-  height: 220px;
-  padding-bottom: 30px; }
-
-#expertise .chart {
+#expertise .expertise-list-container {
   display: block;
   float: right;
+  text-align: center;
   width: 50%;
   height: 100%; }
+  #expertise .expertise-list-container ul {
+    margin-bottom: 20px; }
+  #expertise .expertise-list-container li {
+    background-color: steelblue;
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding: 2px;
+    border: 1px solid #e2dcd6; }
 
 #expertise .bar {
   width: 100%;
@@ -111,13 +119,20 @@
   font: 10px sans-serif;
   text-anchor: middle; }
 
+@media (max-width: 470px) {
+  #expertise .expertise-info-container {
+    width: 100%; }
+  #expertise .expertise-list-container {
+    width: 100%; } }
+
 #projects {
   color: white;
-  padding: 30px; }
+  padding: 10px; }
   #projects h1 {
     display: block;
     text-align: center !important;
     font-size: 2em;
+    margin-top: 20px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto; }
@@ -181,11 +196,15 @@
   display: block; }
   #contact .container {
     display: block;
-    background-color: rgba(226, 220, 214, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
     text-align: center;
     margin-top: 6%;
     margin-bottom: 6%;
     padding: 10px; }
+    #contact .container a {
+      text-decoration: underline;
+      color: white; }
     #contact .container header {
       max-width: 200px;
       margin-top: 10px;

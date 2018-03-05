@@ -9,32 +9,37 @@
         max-height: 100%;
         width: 50%;
         float: left;
-        // text-overflow: ellipsis;
-        overflow: hidden;
+        padding: 10px;
         p {
-            margin-right: 5%;
-            margin-top: 15px;
             font-size: 1.3em;
         }
     }
-    .row { 
-        height: 220px;
-        padding-bottom: 30px;
-    }
-    .chart {
+
+    .expertise-list-container {
         display: block;
-        // margin: auto;
         float: right;
-        // margin-bottom: 30px;
+        text-align: center;
         width: 50%;
         height: 100%;
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        li {
+            background-color: steelblue;
+            width: 80%;
+            margin: auto;
+            color: white;
+            padding: 2px;
+            border: 1px solid rgb(226,220,214);
+        }
     }
     .bar {
         width: 100%;
         background-color: steelblue;
         color: white;
         border: 1px solid white;
-        // float: left;
         padding: {
             left: 1px;
             right: 1px;
@@ -51,4 +56,14 @@
         font: 10px sans-serif;
         text-anchor: middle;
       }
+
+    @media  (max-width: 470px) {
+        .expertise-info-container {
+            width: 100%;
+        }
+        .expertise-list-container {
+            width: 100%;
+        }
+        
+    }
 }
