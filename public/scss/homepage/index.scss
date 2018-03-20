@@ -8,12 +8,12 @@
 
 .chalkboard-bg-img {
     @include static-bg-img();
-    background-image: url("../images/welcome-img.jpg") ;
+    background-image: url("../images/welcome-img-optimized.jpg");
 }
 
 .workspace-bg-img {
     @include static-bg-img();
-    background-image: url("../images/workspace.jpg") ;
+    background-image: url("../images/workspace-optimized.jpg");
 }
 
 .section-container {

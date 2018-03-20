@@ -279,7 +279,7 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("../images/welcome-img.jpg"); }
+  background-image: url("../images/welcome-img-optimized.jpg"); }
   @media (max-width: 992px) {
     .chalkboard-bg-img {
       background-attachment: scroll; } }
@@ -289,7 +289,7 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("../images/workspace.jpg"); }
+  background-image: url("../images/workspace-optimized.jpg"); }
   @media (max-width: 992px) {
     .workspace-bg-img {
       background-attachment: scroll; } }
