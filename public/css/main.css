@@ -13,7 +13,6 @@
     color: #c8c8c8; }
 
 #about {
-  height: 100%;
   width: 40%; }
   #about .about-info-container {
     padding: 20px;
@@ -30,15 +29,12 @@
 
 #expertise {
   width: 60%;
-  background-color: #282828;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  background-color: #282828; }
   #expertise .expertise-info-container {
     display: block;
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     text-align: justify;
     width: 100%;
     color: white; }
@@ -60,11 +56,17 @@
       padding: 0;
       max-width: 400px; }
   #expertise .expertise-list-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  #expertise .expertise-skills-container {
     width: 50%;
     display: block;
     padding: 40px;
     color: #c8c8c8; }
-    #expertise .expertise-list-container h3 {
+    #expertise .expertise-skills-container h3 {
       color: white; }
   #expertise .expertise-interesting-container {
     width: 50%;
@@ -257,12 +259,13 @@
 .relevant-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .section-container {
   display: block;
   margin: 0;
-  width: 100%;
   position: relative; }
 
 #footer {
