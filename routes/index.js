@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 router.get("/", function(req, res){
-    res.render("testindex")
+    res.render("homepage")
 }); //router.get
 router.get("/old", function(req, res){
     res.render("index")

@@ -1,7 +1,7 @@
 $(document).ready(function() {
   function setWindowHeightTo(htmlClass) {
 
-    let _welcomeHeight = $("#welcome").innerHeight();
+    let _welcomeHeight = $("#header").innerHeight();
     console.log(_welcomeHeight)
     let windowHeight = $(window).innerHeight() - _welcomeHeight;
     $(htmlClass).css('height', windowHeight );
@@ -23,4 +23,3 @@ $(document).ready(function() {
     // setVerticalCenterPositionTo('.yCenterPosition');
   });
 });
-

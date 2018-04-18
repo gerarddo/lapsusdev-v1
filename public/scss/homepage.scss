@@ -1,10 +1,8 @@
-@import "../../mixins/main";
+@import "../mixins/main";
 
-@import "_welcome";
-@import "_about";
-@import "_expertise";
-@import "_projects";
-@import "_contact";
+@import "homepage/_welcome";
+@import "homepage/_about";
+@import "homepage/_expertise";
 
 
 
@@ -41,6 +39,5 @@
 .section-container {
     display: block;
     margin: 0;
-    // width: 100%;
     position: relative;
 }
