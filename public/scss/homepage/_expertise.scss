@@ -2,6 +2,7 @@
 
     width: 60%;
     $scale: 40;
+    overflow: scroll;
     background-color: rgb($scale, $scale, $scale);
 
     .expertise-info-container {

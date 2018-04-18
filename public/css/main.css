@@ -9,10 +9,14 @@
     padding: 40px;
     color: white;
     font-size: 1.5em; }
+  #welcome span {
+    font-size: 18px;
+    color: #c8c8c8; }
   #welcome p {
     color: #c8c8c8; }
 
 #about {
+  overflow: scroll;
   width: 40%; }
   #about .about-info-container {
     padding: 20px;
@@ -29,6 +33,7 @@
 
 #expertise {
   width: 60%;
+  overflow: scroll;
   background-color: #282828; }
   #expertise .expertise-info-container {
     display: block;
