@@ -1,70 +1,117 @@
 #expertise {
 
-    h1 {
-        margin: 30px;
-        text-align: center;
-    }
+    width: 60%;
+    $scale: 40;
+    background-color: rgb($scale, $scale, $scale);
+    display: flex;
+    flex-wrap: wrap;
 
     .expertise-info-container {
-        max-height: 100%;
-        width: 50%;
-        float: left;
-        padding: 10px;
+        display: block;
+        padding: 40px;
+        text-align: justify;
+        width: 100%;
+        color: white;
         p {
             font-size: 1.3em;
-            // width: 80%;
+            line-height: 2.5;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .break-line { 
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 3px solid steelblue;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            padding: 0; 
+            max-width: 400px;    
         }
     }
 
     .expertise-list-container {
-        display: block;
-        float: right;
-        text-align: center;
         width: 50%;
-        height: 100%;
-
-        ul {
-            margin-bottom: 20px;
-        }
-
-        li {
-            background-color: steelblue;
-            width: 80%;
-            margin: auto;
+        display: block;
+        padding: 40px;
+        color: rgb(200,200,200);
+        h3 {
             color: white;
-            padding: 2px;
-            border: 1px solid rgb(226,220,214);
         }
-    }
-    .bar {
-        width: 100%;
-        background-color: steelblue;
-        color: white;
-        border: 1px solid white;
-        padding: {
-            left: 1px;
-            right: 1px;
-        }
-        height: 12.5%;
     }
 
-    .chart rect {
-        fill: steelblue;
-      }
+    .expertise-interesting-container {
+        width: 50%;
+        display: block;
+        padding: 40px;
+        h3 {
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(200,200,200);
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // .expertise-list-container {
+    //     display: block;
+    //     float: right;
+    //     text-align: center;
+    //     width: 50%;
+    //     height: 100%;
+
+    //     ul {
+    //         margin-bottom: 20px;
+    //     }
+
+    //     li {
+    //         background-color: steelblue;
+    //         width: 80%;
+    //         margin: auto;
+    //         color: white;
+    //         padding: 2px;
+    //         border: 1px solid rgb(226,220,214);
+    //     }
+    // }
+    // .bar {
+    //     width: 100%;
+    //     background-color: steelblue;
+    //     color: white;
+    //     border: 1px solid white;
+    //     padding: {
+    //         left: 1px;
+    //         right: 1px;
+    //     }
+    //     height: 12.5%;
+    // }
+
+    // .chart rect {
+    //     fill: steelblue;
+    //   }
       
-      .chart text {
-        fill: white;
-        font: 10px sans-serif;
-        text-anchor: middle;
-      }
+    //   .chart text {
+    //     fill: white;
+    //     font: 10px sans-serif;
+    //     text-anchor: middle;
+    //   }
 
-    @media  (max-width: 470px) {
-        .expertise-info-container {
-            width: 100%;
-        }
-        .expertise-list-container {
-            width: 100%;
-        }
+    // @media  (max-width: 470px) {
+    //     .expertise-info-container {
+    //         width: 100%;
+    //     }
+    //     .expertise-list-container {
+    //         width: 100%;
+    //     }
         
-    }
+    // }
 }
+
