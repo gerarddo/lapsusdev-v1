@@ -4,6 +4,10 @@
 @import "shared/header.scss";
 @import "shared/navbar.scss";
 
+@font-face {
+    font-family: Montserrat;
+    src: url(../Montserrat-Regular.ttf);
+}
 
 body {
     font-family: 'Montserrat', Geneva, Trebuchet MS, sans-serif;
