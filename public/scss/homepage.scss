@@ -1,6 +1,5 @@
 @import "../mixins/main";
 
-@import "homepage/_welcome";
 @import "homepage/_about";
 @import "homepage/_expertise";
 
@@ -31,13 +30,3 @@
 }
 
 
-.relevant-info-container{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.section-container {
-    display: block;
-    margin: 0;
-    position: relative;
-}

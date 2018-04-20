@@ -1,0 +1,66 @@
+#_projects {
+  color: white;
+  padding: 10px; }
+  #_projects h1 {
+    display: block;
+    text-align: center !important;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto; }
+  #_projects .project-info-container {
+    text-align: left;
+    float: right;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding-left: 5%;
+    width: 50%; }
+    #_projects .project-info-container h2 {
+      margin-top: 20px; }
+    #_projects .project-info-container p {
+      margin-top: 20px;
+      color: #ccc; }
+    #_projects .project-info-container ul {
+      margin-top: 20px; }
+    #_projects .project-info-container li {
+      border-left: 1px solid #999;
+      margin-left: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #cfc9ad; }
+  #_projects .project-img-container {
+    float: right;
+    width: 50%;
+    position: relative; }
+    #_projects .project-img-container .img-frame {
+      display: block;
+      position: relative;
+      width: 90%;
+      margin: auto; }
+      #_projects .project-img-container .img-frame img {
+        display: block;
+        width: 100%; }
+    #_projects .project-img-container .img-frame-overlay {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0);
+      z-index: 2;
+      height: 100%;
+      width: 100%; }
+      #_projects .project-img-container .img-frame-overlay:hover {
+        background-color: rgba(255, 255, 255, 0.1); }
+  @media (max-width: 992px) {
+    #_projects h1 {
+      margin-bottom: 0; }
+    #_projects .project-img-container {
+      margin-top: 10px;
+      width: 100%; }
+    #_projects .project-info-container {
+      width: 100%;
+      margin-bottom: 50px; }
+      #_projects .project-info-container h2 {
+        margin-top: 0; }
+      #_projects .project-info-container p:first-of-type {
+        margin-top: 10px; } }

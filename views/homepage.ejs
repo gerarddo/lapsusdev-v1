@@ -1,56 +1,14 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
-<head>
-	<title>lapsusdev</title>
-	<!-- For social media displays -->
-	<meta property="og:image" content="http://lapsusdev.com/images/thumbnaile.png" />
-	<meta property="og:title" content="My portfolio" />
-	<meta property="og:description" content="Full-Stack/Science-Driven developer. Take a peak around my portfolio. " />
-	
-	<link rel="image_src" href="images/thumbnaile.png" / >
-
-	<!-- For mobile dimensioning -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- For displaying mexican accents and shit -->	
-		<meta charset="utf-8" />
-	<!-- Stylesheets -->
-		<link rel="stylesheet" type="text/css" href="css/basic-theme.css">
-		<link rel="stylesheet" type="text/css" href="css/lapsusdev-colors.css">
-		<link rel="stylesheet" type="text/css" href="css/responsive-grid.css">
-		<link rel="stylesheet" type="text/css" href="css/charts.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-
-	<!-- Bootstrap -->
-		<!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> -->
-	<!-- Fonts and icons -->
-	<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-		
-
-</head>
+<% include partials/_htmlheader %>
 <body>
 
-	<% include partials/header %>	
-	<% include partials/navbar%>
-	<div class="relevant-info-container fillRemainingHeight" >
+	<% include shared/header %>	
+	<% include shared/navbar%>
+	<div class="relevant-view-container fillRemainingHeight" >
 		<% include homepage/_expertise %>	
 		<% include homepage/_about %>	
 	</div>
 
-<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="scripts/main.js"></script>
-<script type="text/javascript" src="scripts/othermain.js"></script>
-
-
+<% include partials/_htmlscripts %>
 
 </body>
 </html>

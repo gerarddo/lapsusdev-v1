@@ -1,0 +1,19 @@
+#footer {
+  text-align: center; }
+  #footer p {
+    color: white;
+    margin-top: 100px;
+    font-size: 0.8em; }
+  #footer .footer-icon-container {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px; }
+    #footer .footer-icon-container a {
+      font-size: 2em;
+      color: #e2d39a;
+      padding-right: 10px;
+      padding-left: 10px; }
+      #footer .footer-icon-container a:hover {
+        color: white; }

@@ -1,0 +1,42 @@
+
+{
+    "projects": [
+        {
+            "name": "Nucleum 2018",
+            "img": "images/nucleum-optimized.png",
+            "alt": "Nucleum congress of biotechnology and chemical sciences",
+            "description": "Student-run congress of chemical sciences and biotechnology.",
+            "features": [
+                "Custom made template",
+                "API-based forecast",
+                "Mobile-friendly"
+            ],
+            "specs": [
+                "Node.js",
+                "Modal implementation",
+                "Responsive grids",
+                "Fade in slideshow"
+            ],
+            "git": "https://github.com/gerarddo/nucleumproj",
+            "link": "http://congresonucleum.com"
+        },
+        {
+            "name": "Filler 2018",
+            "img": "images/filler-optimized.png",
+            "alt": "Filler GUI",
+            "description": "Software development project for CIDEP",
+            "features": [
+                "Bootstrap for styling",
+                "SPA for user input",
+                "Gcode simulator integrated"
+            ],
+            "specs": [
+                "Node.js",
+                "HTTP-based API",
+                "Angular 5 for GUI"
+            ],
+            "git": "https://github.com/gerarddo/filler-cidep",
+            "link": "https://filler-cidep.herokuapp.com"
+        }
+    ]
+}

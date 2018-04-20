@@ -1,11 +1,8 @@
-
-
-
-
 @import "homepage";
-@import "partials/footer.scss";
-@import "partials/header.scss";
-@import "partials/navbar.scss";
+@import "portfolio";
+@import "shared/footer.scss";
+@import "shared/header.scss";
+@import "shared/navbar.scss";
 
 
 body {
@@ -17,6 +14,18 @@ body {
 	display: table;
 	clear: both;
 } 
+
+.relevant-view-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-container {
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
 
 .lapsusdev-capuccino {
 	background-color: rgb(226,211,154) !important;
