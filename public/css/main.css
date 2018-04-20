@@ -1,6 +1,7 @@
 #about {
-  overflow: scroll;
-  width: 40%; }
+  width: 40%;
+  height: 100%;
+  overflow-y: scroll; }
   #about .about-info-container {
     padding: 20px;
     color: white; }
@@ -16,7 +17,7 @@
 
 #expertise {
   width: 60%;
-  overflow: scroll;
+  overflow-y: scroll;
   background-color: #282828; }
   #expertise .expertise-info-container {
     display: block;
@@ -100,8 +101,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  overflow: scroll; }
+  flex-wrap: wrap; }
   #_projects .project-info-container {
     width: 46.5%;
     padding: 30px;
@@ -192,9 +192,19 @@
     color: white;
     text-decoration: none; }
 
+@media (max-width: 650px) {
+  #header span {
+    display: none; }
+  #header header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.5em; } }
+
 #navbar {
   z-index: 3;
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,7 +253,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: #282828; }
+  background-color: #282828;
+  overflow: scroll; }
 
 .section-container {
   display: block;

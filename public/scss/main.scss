@@ -19,13 +19,15 @@ body {
     display: flex;
 	flex-wrap: wrap;
 	$scale: 40;
-    background-color: rgb($scale, $scale, $scale);
+	background-color: rgb($scale, $scale, $scale);
+	overflow: scroll;
 }
 
 .section-container {
     display: block;
     margin: 0;
-    position: relative;
+	position: relative;
+	// overflow: scroll;
 }
 
 

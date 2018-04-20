@@ -3,10 +3,10 @@ var router = express.Router();
 var info = require('../info.json')
 
 router.get("/", function(req, res){
-    res.render("homepage")
+    res.render("homepage", {route: "/"})
 }); //router.get
 router.get("/portfolio", function(req, res){
-    res.render("portfolio", {projects: info.projects})
+    res.render("portfolio", {route: "/portfolio", projects: info.projects})
 }); //router.get
 router.get("/old", function(req, res){
     res.render("old")
