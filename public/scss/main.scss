@@ -21,6 +21,7 @@ body {
 	$scale: 40;
 	background-color: rgb($scale, $scale, $scale);
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .section-container {
