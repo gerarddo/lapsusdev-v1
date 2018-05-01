@@ -16,11 +16,13 @@
 
 @media (min-width: 651px) {
     #navbar {
-        margin-top: 50px;
-        height: 200px;
-        width: 60px;
-        right: 0;
-        flex-direction: column;
+        margin-top: -90px;
+        right: 200px;
+        // height: 60px;
+        width: 220px;
+        padding: 10px;
+        
+
         background-color: rgba(0,0,0,0.5);
     }
 }
