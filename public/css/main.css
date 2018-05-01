@@ -1,7 +1,6 @@
 #about {
   width: 40%;
-  height: 100%;
-  overflow-y: scroll; }
+  height: 100%; }
   #about .about-info-container {
     padding: 20px;
     color: white; }
@@ -17,7 +16,6 @@
 
 #expertise {
   width: 60%;
-  overflow-y: scroll;
   background-color: #282828; }
   #expertise .expertise-info-container {
     display: block;
@@ -152,6 +150,29 @@
     #_projects .project-info-container {
       width: 100%; } }
 
+#_photo {
+  width: 100%; }
+  #_photo .photo-img-container {
+    width: 100%;
+    position: relative;
+    padding: 20px; }
+  #_photo .img-frame {
+    max-width: 200px;
+    margin: auto; }
+    #_photo .img-frame img {
+      width: 100%;
+      border-radius: 20px;
+      display: block; }
+
+#_whoami {
+  width: 100%; }
+  #_whoami .whoami-text-container {
+    margin: auto;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    color: white; }
+
 #footer {
   text-align: center; }
   #footer p {
@@ -257,7 +278,7 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: #282828;
-  overflow: scroll;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
 
 .section-container {

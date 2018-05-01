@@ -1,12 +1,13 @@
 @import "homepage";
 @import "portfolio";
+@import "about";
 @import "shared/footer.scss";
 @import "shared/header.scss";
 @import "shared/navbar.scss";
 
 @font-face {
     font-family: Montserrat;
-    src: url(../Montserrat-Regular.ttf);
+    src: url(../Montserrat-Regular.ttf);  
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 	flex-wrap: wrap;
 	$scale: 40;
 	background-color: rgb($scale, $scale, $scale);
-	overflow: scroll;
+	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -32,7 +33,6 @@ body {
     display: block;
     margin: 0;
 	position: relative;
-	// overflow: scroll;
 }
 
 
