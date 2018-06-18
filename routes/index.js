@@ -11,6 +11,9 @@ router.get("/portfolio", function(req, res){
 router.get("/about", function(req, res){
     res.render("about", {route: "/about", about: info.about})
 }); //router.get
+router.get("/contact", function(req, res){
+    res.render("contact", {route: "/contact"})
+}); //router.get
 router.get("/old", function(req, res){
     res.render("old")
 }); //router.get

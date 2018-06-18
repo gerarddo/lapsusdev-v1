@@ -2,7 +2,7 @@
     z-index: 3;
     position: fixed;
     display:flex;
-    nav {
+    .nav {
         flex: 1;
         padding: 10px;
         color: white;
@@ -11,23 +11,23 @@
     a {
         color: white;
         text-decoration: none;
-    }
+    } 
 }
 
-@media (min-width: 651px) {
+@media (min-width: 921px) {
     #navbar {
         margin-top: -90px;
-        right: 200px;
+        right: 190px;
         // height: 60px;
         width: 220px;
         padding: 10px;
         
 
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0);
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 920px) {
     #navbar {
         right: 0;
         left: 0;

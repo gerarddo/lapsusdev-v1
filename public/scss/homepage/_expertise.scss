@@ -109,14 +109,25 @@
     //     text-anchor: middle;
     //   }
 
-    // @media  (max-width: 470px) {
-    //     .expertise-info-container {
-    //         width: 100%;
-    //     }
-    //     .expertise-list-container {
-    //         width: 100%;
-    //     }
+    @media  (max-width: 900px) {
+
+        .expertise-skills-container {
+            width: 100%;
+        }
+    
+        .expertise-interesting-container {
+            width: 100%;
+        }
         
-    // }
+        // .expertise-info-container {
+        //     width: 100%;
+        // }
+        // .expertise-list-container {
+        //     width: 100%;
+        // }
+        
+    }
+
+
 }
 
