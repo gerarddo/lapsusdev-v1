@@ -3,7 +3,10 @@ var express                             = require("express"),
     bodyParser                      	= require("body-parser");
 
         // routes
-var indexRoutes                 = require("./routes/index")
+var indexRoutes                 = require("./routes/index");
+
+
+// opn = require('opn'); // for opening localhost:{{port}} in default browser
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -22,7 +25,7 @@ app.listen(process.env.PORT || port, process.env.IP, function(){
     console.log("-------------------------")
 });
 
-
+// opn('http://localhost:' + port);
 
 
 
